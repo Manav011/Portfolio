@@ -1,0 +1,60 @@
+.header{
+
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    color: white;
+    padding: 35px;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 300;
+    box-sizing: border-box;
+    align-items: center;
+
+    .logo{
+        display: flex;
+        cursor: pointer;
+        p{
+            margin: 0px;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        .name{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-left: 5px;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            p{
+                position: relative;
+                transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+                &:nth-of-type(2){
+                    padding-left: 0.3em;
+                }
+                &:nth-of-type(3){
+                    position: absolute;
+                    left: 120px;
+                    padding-left: 0.3em;
+                }
+            }
+        }
+        &:hover{
+            .copyright{
+                transform: scale(1.5) rotate(360deg);
+            }
+            .name{
+                padding-right: 30px;
+                .codeBy{
+                    transform: translateX(-100%);
+                }
+                .manav{
+                    transform: translateX(-65px);
+                }
+                .bafna{
+                    transform: translateX(-65px);
+                }
+            }
+        }
+    }
+}
