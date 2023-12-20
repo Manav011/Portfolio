@@ -44,7 +44,7 @@ export default function Nameanimation() {
     <main className={styles.main}>
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Manav Bafna -</p>
+          <p ref={firstText}>Manav Bafna -</p> {/*—*/}
           <p ref={secondText}>Manav Bafna -</p>
         </div>
       </div>

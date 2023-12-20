@@ -9,8 +9,8 @@ export default function Logo() {
                 <p className={sty.copyright}>©</p>
                 <div className={sty.name}>
                     <p className={sty.codeBy}>Code by</p>
-                    <p className={sty.manav}>Manav</p>
-                    <p className={sty.bafna}>Bafna</p>
+                    <p className={`${sty.manav} font-bold`}>Manav</p>
+                    <p className={`${sty.bafna} font-bold`}>Bafna</p>
                 </div>
             </div>
     </div>

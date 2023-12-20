@@ -2,8 +2,7 @@
 import useBlobity from "blobity/lib/react/useBlobity";
 import { useEffect } from "react";
 import { initialBlobityOptions } from "../utils/BlobityConfig";
-import Navbar from "@/components/navbar/navbar";
-import Logo from "@/components/logo/logo";
+import Intro from "@/components/intro/intro";
 
 export default function Home() {
   // this is how to change the cursor 
@@ -24,12 +23,19 @@ export default function Home() {
   }, []);
   // cursor changing part will end here
 
-  
+  // locomotive scroll to make scroll smooth ans slow
+  useEffect(() => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  })
 
   return (
     <main className="">
-      <Logo />
-      <Navbar />
+      <Intro />
     </main>
   )
 }
