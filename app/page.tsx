@@ -1,8 +1,10 @@
 "use client";
 import useBlobity from "blobity/lib/react/useBlobity";
 import { useEffect } from "react";
-import { initialBlobityOptions } from "../utils/BlobityConfig";
+import { initialBlobityOptions } from "../lib/BlobityConfig";
 import Intro from "@/components/intro/intro";
+import About from "@/components/about/about";
+import Projects from "@/components/projects/projects";
 
 export default function Home() {
   // this is how to change the cursor 
@@ -36,6 +38,8 @@ export default function Home() {
   return (
     <main className="">
       <Intro />
+      <Projects />
+      <About />
     </main>
   )
 }
