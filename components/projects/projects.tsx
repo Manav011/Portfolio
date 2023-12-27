@@ -26,7 +26,7 @@ const Card = ({ card }: {card:CardType}) => {
         <div className="absolute py-4 px-5 top-0 h-full sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[40%] flex flex-wrap pt-4 pb-7 flex-col
             group-even:top-0  group-even:right-0
         ">
-          <div className="absolute flex gap-6 w-fit lg:group-even:right-10 lg:group-odd:left-10 left-[5rem]">
+          <div className="absolute flex gap-6 w-fit lg:group-even:right-10 lg:group-odd:left-10">
             <a className="rounded-full bg-white h-[4rem] w-[4rem] flex justify-center items-center" data-blobity-radius="42" target="_blank" href={card.githubUrl}>
               <Image alt="link to github" src={githubsvg} className="h-[2rem] w-[2rem]"/>
             </a>
@@ -44,7 +44,7 @@ const Card = ({ card }: {card:CardType}) => {
           </div>
         </div>
         <Image src={card.imageUrl} alt="Project Image" quality={95}
-          className="absolute hidden -z-10 sm:block bottom-8 -right-40 lg:w-[50rem] md:w-[40rem] rounded-t-lg shadow-2xl
+          className="absolute hidden -z-10 sm:block bottom-8 -right-[15rem] lg:w-[50rem] md:w-[40rem] rounded-t-lg shadow-2xl
           transition 
           group-hover:scale-[1.04]
           group-hover:-translate-x-3
@@ -55,7 +55,7 @@ const Card = ({ card }: {card:CardType}) => {
           group-even:group-hover:translate-y-3
           group-even:group-hover:rotate-2
   
-          group-even:right-[initial] group-even:-left-40"
+          group-even:right-[initial] group-even:-left-[15rem]"
         />
       </div>
     </div>
@@ -71,7 +71,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-73%"]);
 
   return (
-    <section ref={targetRef} className="relative top-[81vh] h-[250vh] lg:h-[400vh] bg-transparent">
+    <section ref={targetRef} className="relative top-[100vh] lg:top-[81vh] h-[250vh] lg:h-[400vh] bg-transparent">
       <a id="projects"></a>
       <div className="sticky top-0 px-[3rem] flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-[100px]">

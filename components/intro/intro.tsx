@@ -33,15 +33,12 @@ export default function Intro() {
         <Navbar />
         <motion.div className="absolute top-8 right-[3rem] flex gap-10 text-[#e4ded7] md:gap-14 lg:gap-14 lg:right-[100px] z-10"
             initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 5, opacity: 1 }}
-        >
+            animate={{ y: 5, opacity: 1 }}>
             <a target="_blank" aria-label="View GitHub Profile" href="https://github.com/Manav011" ><p className="top-0 text-[16px] font-bold text-[#e4ded7] md:text-[16px]">GH</p></a>
             <a target="_blank" aria-label="View LinkedIn Profile" href="https://www.linkedin.com/in/manav-bafna-4a0134222" ><p className="top-0 text-[16px] font-bold text-[#e4ded7] md:text-[16px]" >LI</p></a>
         </motion.div>
-        <motion.div className='absolute top-[160px] w-[20rem] left-[3rem] text-[1.2rem] lg:top-[220px] lg:left-10 lg:w-[30rem] lg:text-[1.5rem]'
-            
-        >
-            <p className='text-left'>Hi, I'm Manav, a Developer with a passion for making things beautiful and functional.</p>
+        <motion.div className='absolute top-[160px] w-[20rem] left-[3rem] text-[1.2rem] lg:top-[240px] lg:left-10 lg:w-[30rem] lg:text-[1.5rem]'>
+            <p className='text-left'>Hello, I’m a Developer with a passion for making things beautiful and functional.</p>
         </motion.div>
         <section className='absolute lg:top-0 lg:left-[430px] top-[300px]'>
             <div className='flex items-center justify-center'>
