@@ -37,16 +37,20 @@ export default function Intro() {
             <a target="_blank" aria-label="View GitHub Profile" href="https://github.com/Manav011" ><p className="top-0 text-[16px] font-bold text-[#e4ded7] md:text-[16px]">GH</p></a>
             <a target="_blank" aria-label="View LinkedIn Profile" href="https://www.linkedin.com/in/manav-bafna-4a0134222" ><p className="top-0 text-[16px] font-bold text-[#e4ded7] md:text-[16px]" >LI</p></a>
         </motion.div>
-        <motion.div className='absolute top-[160px] w-[20rem] left-[3rem] text-[1.2rem] lg:top-[240px] lg:left-10 lg:w-[30rem] lg:text-[1.5rem]'>
+        <motion.div className='absolute top-[160px] w-[20rem] left-[3rem] text-[1.2rem] lg:top-[240px] lg:left-10 lg:w-[30rem] lg:text-[1.5rem]'
+            initial={{x:-100 , opacity:0}}
+            animate={{x:0 , opacity:1}}>
             <p className='text-left'>Hello, I’m a Developer with a passion for making things beautiful and functional.</p>
         </motion.div>
         <section className='absolute lg:top-0 lg:left-[430px] top-[300px]'>
-            <div className='flex items-center justify-center'>
+            <motion.div className='flex items-center justify-center'
+                initial={{y:100 ,opacity:0}}
+                animate={{y: 0,opacity:1}}>
                 <Image src="/images/manav.png" alt="Manav Bafna" height={500} width={500} quality={100} priority={true}
                     className=" sm:w-[600px] md:w-[600px] lg:w-[600px]"
                     // data-blobity-tooltip="Professional"
                     />
-            </div>
+            </motion.div>
         </section>
         <Nameanimation />
     </div>

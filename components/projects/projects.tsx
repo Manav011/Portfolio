@@ -27,10 +27,10 @@ const Card = ({ card }: {card:CardType}) => {
             group-even:top-0  group-even:right-0
         ">
           <div className="absolute flex gap-6 w-fit lg:group-even:right-10 lg:group-odd:left-10">
-            <a className="rounded-full bg-white h-[4rem] w-[4rem] flex justify-center items-center" data-blobity-radius="42" target="_blank" href={card.githubUrl}>
+            <a className="rounded-full bg-white h-[4rem] w-[4rem] flex justify-center items-center" data-blobity-radius="37" data-blobity-offset-x="4" data-blobity-offset-y="4" target="_blank" href={card.githubUrl}>
               <Image alt="link to github" src={githubsvg} className="h-[2rem] w-[2rem]"/>
             </a>
-            <a className="rounded-full bg-white h-[4rem] w-[4rem] flex justify-center items-center" data-blobity-radius="42" target="_blank" href={card.url}>
+            <a className="rounded-full bg-white h-[4rem] w-[4rem] flex justify-center items-center" data-blobity-radius="37" data-blobity-offset-x="4" data-blobity-offset-y="4" target="_blank" href={card.url}>
               <Image alt="link to project" src={linksvg} className="h-[2rem] w-[3rem]"/>
             </a>
           </div>

@@ -5,6 +5,7 @@ import { initialBlobityOptions } from "../lib/BlobityConfig";
 import Intro from "@/components/intro/intro";
 import About from "@/components/about/about";
 import Projects from "@/components/projects/projects";
+import Contact from "@/components/contact/contact";
 
 export default function Home() {
   // this is how to change the cursor 
@@ -25,7 +26,7 @@ export default function Home() {
   }, []);
   // cursor changing part will end here
 
-  // locomotive scroll to make scroll smooth ans slow
+  // locomotive scroll to make scroll smooth and slow
   useEffect(() => {
     (
       async () => {
@@ -40,6 +41,7 @@ export default function Home() {
       <Intro />
       <Projects />
       <About />
+      <Contact />
     </main>
   )
 }

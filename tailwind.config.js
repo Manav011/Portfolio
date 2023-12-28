@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'RTL': 'RightToLeft 200s infinite linear',
+      },
+      keyframes: {
+        RightToLeft: {
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

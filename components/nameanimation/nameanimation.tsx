@@ -3,6 +3,7 @@ import styles from './nameanimation.module.scss'
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { motion } from 'framer-motion';
 
 export default function Nameanimation() {
 
@@ -42,12 +43,14 @@ export default function Nameanimation() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.sliderContainer}>
+      <motion.div className={styles.sliderContainer}
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y:0 , opacity: 1 }} >
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Manav Bafna -</p> {/*—*/}
           <p ref={secondText}>Manav Bafna -</p>
         </div>
-      </div>
+      </motion.div>
     </main>
   )
 }
