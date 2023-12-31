@@ -1,6 +1,32 @@
 import projection from "@/public/images/projection.png";
 import messenger from "@/public/images/messenger.png";
-import wordanalyticsImg from "@/public/images/wordanalytics.png";
+import newsimg from "@/public/images/news.png";
+import portfolioimg from "@/public/images/portfolio.png";
+import badge from '@/public/images/OCAJP.png';
+import angularsvg from "@/public/svg/angular.svg";
+import bootsrtapsvg from "@/public/svg/bootstrap.svg";
+import csvg from "@/public/svg/c.svg";
+import cppsvg from "@/public/svg/cpp.svg";
+import csssvg from "@/public/svg/css.svg";
+import dockersvg from "@/public/svg/docker.svg";
+import expresssvg from "@/public/svg/express.svg";
+import gitsvg from "@/public/svg/git.svg";
+import githubsvg1 from "@/public/svg/github1.svg";
+import htmlsvg from "@/public/svg/html.svg";
+import javasvg from "@/public/svg/java.svg";
+import jssvg from "@/public/svg/js.svg";
+import linuxsvg from "@/public/svg/linux.svg";
+import mongodbsvg from "@/public/svg/mongodb.svg";
+import mysqlsvg from "@/public/svg/mysql.svg";
+import nextjssvg from "@/public/svg/nextjs.svg";
+import nodesvg from "@/public/svg/node.svg";
+import npmsvg from "@/public/svg/npm.svg";
+import pythonsvg from "@/public/svg/python.svg";
+import reactsvg from "@/public/svg/react.svg";
+import scsssvg from "@/public/svg/scss.svg";
+import tailwindsvg from "@/public/svg/tailwind.svg";
+import typescriptsvg from "@/public/svg/typescript.svg";
+import vscodesvg from "@/public/svg/vscode.svg";
 
 export const links = [
 {
@@ -48,7 +74,7 @@ export const projectsData = [
     description:
         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: portfolioimg,
     url: "",
     githubUrl: "",
 },
@@ -58,30 +84,137 @@ export const projectsData = [
     description:
         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: newsimg,
     url: "",
     githubUrl: "",
 },
 ] as const;
 
+
 export const skillsData = [
-"HTML",
-"CSS",
-"JavaScript",
-"TypeScript",
-"React",
-"Next.js",
-"Node.js",
-"Git",
-"Tailwind",
-"Prisma",
-"MongoDB",
-"Redux",
-"GraphQL",
-"Apollo",
-"Express",
-"PostgreSQL",
-"Python",
-"Django",
-"Framer Motion",
+    {
+        name: "OCAJP SE8",
+        svg: badge,
+        link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=B4669534026C9F8B61F33B708D5D88B6E0FE8A3CA533469478B8009926817115",
+    },
+    {
+        name: "Angular",
+        svg: angularsvg,
+        link: "https://angular.io/",
+    },
+    {
+        name: "Bootstrap",
+        svg: bootsrtapsvg,
+        link: "https://getbootstrap.com/",
+    },
+    {
+        name: "C",
+        svg: csvg,
+        link: "https://devdocs.io/c/",
+    },
+    {
+        name: "C++",
+        svg: cppsvg,
+        link: "https://devdocs.io/cpp/",
+    },
+    {
+        name: "CSS",
+        svg: csssvg,
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+        name: "Docker",
+        svg: dockersvg,
+        link: "https://www.docker.com/",
+    },
+    {
+        name: "Express",
+        svg: expresssvg,
+        link: "https://expressjs.com/",
+    },
+    {
+        name: "Git",
+        svg: gitsvg,
+        link: "https://git-scm.com/",
+    },
+    {
+        name: "GitHub",
+        svg: githubsvg1,
+        link: "https://github.com/",
+    },
+    {
+        name: "HTML",
+        svg: htmlsvg,
+        link: "hhttps://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+        name: "Java",
+        svg: javasvg,
+        link: "https://dev.java/learn/getting-started/",
+    },
+    {
+        name: "JavaScript",
+        svg: jssvg,
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+        name: "Linux",
+        svg: linuxsvg,
+        link: "https://www.linux.org/",
+    },
+    {
+        name: "MongoDB",
+        svg: mongodbsvg,
+        link: "https://www.mongodb.com/",
+    },
+    {
+        name: "MySQL",
+        svg: mysqlsvg,
+        link: "https://www.mysql.com/",
+    },
+    {
+        name:"Next.js" ,
+        svg: nextjssvg,
+        link: "https://nextjs.org/",
+    },
+    {
+        name: "Node.js",
+        svg: nodesvg,
+        link: "https://nodejs.org/en/",
+    },
+    {
+        name: "NPM",
+        svg: npmsvg,
+        link: "https://www.npmjs.com/",
+    },
+    {
+        name:"Python" ,
+        svg: pythonsvg,
+        link:"https://www.python.org/",
+    },
+    {
+        name:"React" ,
+        svg: reactsvg,
+        link:"https://reactjs.org/",
+    },
+    {
+        name:"SCSS",
+        svg: scsssvg,
+        link:"https://sass-lang.com/",
+    },
+    {
+        name:"Tailwind CSS",
+        svg: tailwindsvg,
+        link:"https://tailwindcss.com/"
+    },
+    {
+        name:"TypeScript",
+        svg: typescriptsvg,
+        link:"https://www.typescriptlang.org/",
+    },
+    {
+        name:"VS Code",
+        svg: vscodesvg,
+        link:"https://code.visualstudio.com/",
+    },
 ] as const;

@@ -68,10 +68,10 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-73%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-73%"]);
 
   return (
-    <section ref={targetRef} className="relative top-[100vh] lg:top-[81vh] h-[250vh] lg:h-[400vh] bg-transparent">
+    <section ref={targetRef} className="relative top-[90vh] lg:top-[81vh] h-[250vh] lg:h-[400vh] bg-transparent">
       <a id="projects"></a>
       <div className="sticky top-0 px-[3rem] flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-[100px]">
