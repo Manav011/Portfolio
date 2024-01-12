@@ -7,8 +7,38 @@ export const riseWithFade = {
     y: 0,
     opacity: 1,
     transition: {
+      duration: 1,
       ease: [0.65, 0, 0.35, 1],
-      duration: 0.7,
+    },
+  },
+};
+
+export const downWithFade = {
+  initial: {
+    y: -100,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: [0.65, 0, 0.35, 1],
+    },
+  },
+};
+
+export const scalingAnimation = {
+  initial: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      ease: [0.65, 0, 0.35, 1],
     },
   },
 };
@@ -50,38 +80,6 @@ export const wordAnimation = {
       delay: 1,
       ease: [0.2, 0.65, 0.3, 0.9],
       duration: 1,
-    },
-  },
-};
-
-export const wordAnimation2 = {
-  initial: {
-    opacity: 0,
-    y: 150,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      // delay: 1,
-      ease: [0.2, 0.65, 0.3, 0.9],
-      duration: 1,
-    },
-  },
-};
-
-export const bodyAnimation = {
-  initial: {
-    opacity: 0,
-    y: `1em`,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 5.5,
-      duration: 1,
-      ease: [0.2, 0.65, 0.3, 0.9],
     },
   },
 };

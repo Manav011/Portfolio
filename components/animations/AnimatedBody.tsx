@@ -15,13 +15,12 @@ export default function AnimatedBody({
   wordSpace,
   charSpace,
 }: AnimatedBodyProps) {
-  //   const text = "Animated Text"; // This would normally be passed into this component as a prop!
 
   const ctrls = useAnimation();
 
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true,
+    // triggerOnce: true,
   });
 
   useEffect(() => {

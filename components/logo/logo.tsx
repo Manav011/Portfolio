@@ -2,12 +2,14 @@
 import React from 'react'
 import sty from './logo.module.scss';
 import { motion } from 'framer-motion';
+import { scalingAnimation } from '../animations/animations';
 
 export default function Logo() {
   return (
     <motion.div className={sty.header}
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 5, opacity: 1 }}
+      variants={scalingAnimation}
+      initial={scalingAnimation.initial}
+      animate={scalingAnimation.animate}
     >
         <div data-blobity-tooltip="Looks cool right" className={sty.logo}>
               <p className={sty.copyright}>©</p>

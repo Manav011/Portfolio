@@ -4,6 +4,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { motion } from 'framer-motion';
+import { riseWithFade } from '../animations/animations';
 
 export default function Nameanimation() {
 
@@ -44,8 +45,9 @@ export default function Nameanimation() {
   return (
     <main className={styles.main}>
       <motion.div className={styles.sliderContainer}
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y:0 , opacity: 1 }} >
+        variants={riseWithFade}
+        initial={riseWithFade.initial}
+        animate={riseWithFade.animate} >
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Manav Bafna -</p> {/*—*/}
           <p ref={secondText}>Manav Bafna -</p>

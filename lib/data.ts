@@ -52,7 +52,7 @@ export const projectsData = [
     id:1,
     title: "ProjectiON",
     description:
-        "In this project we utilized ReactJS to create and enhance a student portal, fostering better interactivity for project engagement. This addressed a problem from the Government of Chandigarh in the Smart India Hackathon, contributing to a 36-hour project marathon with a dedicated team of 5 members. This experience showcased my ReactJS skills and effective collaboration in a fast-paced environment.",
+        "In this project we utilized ReactJS to create and enhance a student portal for project engagement. This addressed a problem from the Government of Chandigarh in the Smart India Hackathon, contributing to a 36-hour project marathon with a dedicated team of 5 members. This experience showcased my ReactJS skills and effective collaboration in a fast-paced environment.",
     tags: ["React", "Bootstrap", "MongoDB"],
     imageUrl: projection,
     url: "https://github.com/Manav011/Project-ION-front-end",
@@ -63,27 +63,27 @@ export const projectsData = [
     title: "Messenger",
     description:
         "In this I have demonstrated my Java Socket Programming proficiency by creating a reliable and efficient communication channel between the client and server components of an application. Additionally, I integrated JDBC with MySQL to ensure seamless database access and implemented encryption using Cipher to safeguard sensitive user data.        ",
-    tags: ["Java", "JavaFX" , "ServerSocket"],
+    tags: ["Java", "ServerSocket" , "JavaFX"],
     imageUrl: messenger,
-    url: "https://github.com/Manav011/Messenger_project",
+    url: "https://drive.google.com/drive/folders/1UgPFe7hG1KnNEmmF7IE9etWK8_PJkI5_",
     githubUrl: "https://github.com/Manav011/Messenger_project",
 },
 {
     id:3,
-    title: "Word Analytics",
+    title: "Portfolio",
     description:
         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL"],
+    tags: ["Next.js", "TypeScript" , "Tailwind"],
     imageUrl: portfolioimg,
     url: "",
     githubUrl: "",
 },
 {
     id:4,
-    title: "Word Analytics",
+    title: "Quick News",
     description:
         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL"],
+    tags: ["Angular", "Bootstrap" , "TypeScript"],
     imageUrl: newsimg,
     url: "",
     githubUrl: "",
