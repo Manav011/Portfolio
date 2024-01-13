@@ -6,27 +6,7 @@ import Logo from "@/components/logo/logo";
 import Nameanimation from '../nameanimation/nameanimation';
 import { motion } from 'framer-motion';
 import profile from '@/public/images/manav.png';
-import { scalingAnimation, imageAnimation, downWithFade } from '../animations/animations';
-
-/*
-const fadeAnimationVariant = {
-    initial: {
-        opacity: 0,
-        y: -50,
-    },
-    animate: {
-        opacity: 1,
-        y: 5,
-    }
-}
-
-variants={fadeAnimationVariant}
-initial="inital"
-whileInView="animate"
-viewport={{once:true}}
-
-we can use variants also like this to put it in motion
-*/
+import { scalingAnimation, imageAnimation, titleAnimation1, titleAnimation2 } from '../animations/animations';
 
 export default function Intro() {
     return (
@@ -41,20 +21,26 @@ export default function Intro() {
             <a target="_blank" data-blobity-tooltip="GitHub" aria-label="View GitHub Profile" href="https://github.com/Manav011" ><p className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]">GH</p></a>
             <a target="_blank" data-blobity-tooltip="LinkedIn" aria-label="View LinkedIn Profile" href="https://www.linkedin.com/in/manav-bafna-4a0134222" ><p className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]" >LI</p></a>
         </motion.div>
-        <motion.div className='absolute top-[160px] w-[20rem] left-[3rem] text-[1.2rem] lg:top-[240px] lg:left-10 lg:w-[30rem] lg:text-[1.5rem]'
-            variants={downWithFade}
-            initial={downWithFade.initial}
-            animate={downWithFade.animate}>
-            <p className='text-left'>Hello, I’m a Developer with a passion for making things beautiful and functional.</p>
-        </motion.div>
-        <motion.div className='flex absolute lg:top-0 lg:right-[200px] top-[300px]'
+        <div className='absolute lg:top-[12rem] lg:left-[30%] lg:w-fit lg:text-[2rem] md:top-[20rem] md:left-[35%] top-[23rem] left-[24%] text-[1.2rem] font-bold'>
+            <motion.div variants={titleAnimation1} initial="initial" whileInView="animate" 
+                // viewport={{once: true}}
+            >
+                <p className='text-left'>Hello, I’m a Developer with a passion for </p>
+            </motion.div>
+            <motion.div variants={titleAnimation2} initial="initial" whileInView="animate" 
+                // viewport={{once: true}}
+            >
+                <p className='text-left'>making things functional and beautiful.</p>
+            </motion.div>
+        </div>
+        <motion.div className='flex absolute lg:top-[20rem] lg:left-[42%] md:top-[20rem] md:left-[35%] top-[23rem] left-[24%]'
             variants={imageAnimation}
             initial={imageAnimation.initial}
             animate={imageAnimation.animate}>
             <Image src={profile} alt="Manav Bafna"
-                className=" sm:w-[600px] md:w-[600px] lg:w-[600px]"
+                className="w-[200px] rounded-xl grayscale hover:grayscale-0"
                 priority
-                // data-blobity-tooltip="Professional"
+                data-blobity-tooltip="Me"
                 />
         </motion.div>
         <Nameanimation />

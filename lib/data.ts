@@ -27,6 +27,9 @@ import scsssvg from "@/public/svg/scss.svg";
 import tailwindsvg from "@/public/svg/tailwind.svg";
 import typescriptsvg from "@/public/svg/typescript.svg";
 import vscodesvg from "@/public/svg/vscode.svg";
+import certificateImg from "@/public/images/cert.png";
+
+export const certificate = certificateImg;
 
 export const links = [
 {
@@ -52,7 +55,7 @@ export const projectsData = [
     id:1,
     title: "ProjectiON",
     description:
-        "In this project we utilized ReactJS to create and enhance a student portal for project engagement. This addressed a problem from the Government of Chandigarh in the Smart India Hackathon, contributing to a 36-hour project marathon with a dedicated team of 5 members. This experience showcased my ReactJS skills and effective collaboration in a fast-paced environment.",
+        "In this project we utilized ReactJS to create and enhance a student portal for project engagement. This addressed a problem from the Govt. of Chandigarh in the Smart India Hackathon, contributing to a 36-hour project marathon with a dedicated team of 5 members. This experience showcased my ReactJS skills and effective collaboration in a fast-paced environment.",
     tags: ["React", "Bootstrap", "MongoDB"],
     imageUrl: projection,
     url: "https://github.com/Manav011/Project-ION-front-end",
@@ -72,21 +75,21 @@ export const projectsData = [
     id:3,
     title: "Portfolio",
     description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        "Explore the synergy of TypeScript, Next.js, and Tailwind CSS in my portfolio, brought to life by Framer Motion and GSAP animations. Seamless transitions unveil my projects, creating an engaging user experience. Discover the ideal fusion of creativity and beauty in this dynamic showcase thanks to flexible design.",
     tags: ["Next.js", "TypeScript" , "Tailwind"],
     imageUrl: portfolioimg,
-    url: "",
-    githubUrl: "",
+    url: "https://manav.is-a.dev",
+    githubUrl: "https://github.com/Manav011/Portfolio",
 },
 {
     id:4,
     title: "Quick News",
     description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+        "A sleek web app powered by Angular, TypeScript, and Bootstrap. Breaking news from every corner of the globe, seamlessly delivered through the NewsAPI. Engage with a visually dynamic interface and enjoy a fluid news experience, enriched with captivating custom animation.",
     tags: ["Angular", "Bootstrap" , "TypeScript"],
     imageUrl: newsimg,
     url: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Manav011/NewsWebApp",
 },
 ] as const;
 
@@ -95,7 +98,7 @@ export const skillsData = [
     {
         name: "OCAJP SE8",
         svg: badge,
-        link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=B4669534026C9F8B61F33B708D5D88B6E0FE8A3CA533469478B8009926817115",
+        link: "https://drive.google.com/file/d/1GXbwaNH7nG-3AlMkLs1yTfhpTqyhctlC",
     },
     {
         name: "Angular",

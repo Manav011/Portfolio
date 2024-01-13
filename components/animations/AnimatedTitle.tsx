@@ -41,13 +41,13 @@ export default function AnimatedTitle({
   const characterAnimation = {
     hidden: {
       opacity: 0,
-      y: `0.25em`,
+      y: `0.5em`,
     },
     visible: {
       opacity: 1,
       y: `0em`,
       transition: {
-        duration: 1,
+        duration: 0.5,
         ease: [0.2, 0.65, 0.3, 0.9],
       },
     },
