@@ -37,7 +37,7 @@ export default function About() {
                                         variants={skillsAnimation}
                                         initial="initial"
                                         whileInView="animate"
-                                        // viewport={{once: true}}
+                                        viewport={{once: true}}
                                         custom={index}
                                     >
                                         <a className="flex" data-blobity-tooltip={skill.name == "OCAJP SE8" ? "OCAJP" : ""} data-blobity-radius="28" data-blobity-offset-x="8" data-blobity-offset-y="8" target="_blank" href={skill.link}>

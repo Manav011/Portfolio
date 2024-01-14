@@ -74,22 +74,6 @@ export const imageAnimation = {
   },
 };
 
-export const wordAnimation = {
-  initial: {
-    opacity: 0,
-    y: 150,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 1,
-      ease: [0.2, 0.65, 0.3, 0.9],
-      duration: 1,
-    },
-  },
-};
-
 export const skillsAnimation = {
   initial: {
     opacity: 0,
@@ -104,34 +88,45 @@ export const skillsAnimation = {
   }),
 }
 
-export const titleAnimation1 = {
+export const titleAnimation = {
   initial: {
     opacity: 0,
     y: 50,
   },
-  animate: {
+  animate: (delay1: number) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.5,
-      duration: 1,
-      ease: [0.2, 0.65, 0.3, 0.9],
-    },
-  },
-};
-
-export const titleAnimation2 = {
-  initial: {
-    opacity: 0,
-    y: 50,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5,
+      delay: delay1,
       duration: 1.5,
       ease: [0.2, 0.65, 0.3, 0.9],
     },
-  },
+  }),
 };
+
+export const opacity = {
+  initial: {
+      opacity: 0
+  },
+  enter: {
+      opacity: 1,
+      transition: {
+        duration: 1, 
+        delay: 0.2
+      }
+  },
+}
+
+export const slideUp = {
+  initial: {
+      top: 0
+  },
+  exit: {
+      top: "-100vh",
+      transition: {
+        duration: 0.8,
+        ease: [0.76, 0, 0.24, 1],
+        delay: 0.2
+      }
+  }
+}

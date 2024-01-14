@@ -8,7 +8,7 @@ import { riseWithFade } from '../animations/animations';
 export default function Navbar() {
 
     return (
-    <header className='z-[999] fixed top-0'>
+    <header className='z-[98] fixed top-0'>
         <motion.div className="fixed lg:left-[35.5%] md:left-[25%] left-[17%] bottom-[4.5rem] md:bottom-[2rem] lg:bottom-[1.75rem] rounded-lg border shadow-lg 
             shadow-black/[0.03] backdrop-blur-[0.5rem] lg:w-[25rem] lg:h-[3.3rem] md:h-[2.8rem] md:w-[22rem] h-[2.5rem] w-[18rem] sm:rounded-lg
             bg-gray-950 border-black/40 bg-opacity-80"

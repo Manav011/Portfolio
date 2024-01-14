@@ -20,7 +20,7 @@ export default function AnimatedBody({
 
   const { ref, inView } = useInView({
     threshold: 0.1,
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   useEffect(() => {
