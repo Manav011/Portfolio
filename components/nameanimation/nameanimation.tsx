@@ -46,8 +46,8 @@ export default function Nameanimation() {
     <main className={styles.main}>
       <motion.div className={styles.sliderContainer}
         variants={riseWithFade}
-        initial={riseWithFade.initial}
-        animate={riseWithFade.animate} >
+        initial="initial"
+        animate="animate" >
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Manav Bafna -</p> {/*—*/}
           <p ref={secondText}>Manav Bafna -</p>

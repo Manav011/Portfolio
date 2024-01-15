@@ -24,7 +24,7 @@ export default function Intro() {
             variants={scalingAnimation}
             initial="initial"
             animate="animate">
-            <a target='_blank' data-blobity-tooltip="Oracle Certificate" aria-label='OCAJP' href='https://catalog-education.oracle.com/pls/certview/sharebadge?id=B4669534026C9F8B61F33B708D5D88B6E0FE8A3CA533469478B8009926817115'><p className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]">OC</p></a>
+            <a target='_blank' data-blobity-tooltip="Oracle Certificate" aria-label='OCAJP' href='https://drive.google.com/file/d/1GXbwaNH7nG-3AlMkLs1yTfhpTqyhctlC'><p className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]">OC</p></a>
             <a target="_blank" data-blobity-tooltip="GitHub" aria-label="View GitHub Profile" href="https://github.com/Manav011" ><p className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]">GH</p></a>
             <a target="_blank" data-blobity-tooltip="LinkedIn" aria-label="View LinkedIn Profile" href="https://www.linkedin.com/in/manav-bafna-4a0134222" ><p className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]" >LI</p></a>
         </motion.div>
@@ -33,7 +33,7 @@ export default function Intro() {
                 initial="initial" 
                 whileInView="animate" 
                 viewport={{once: true}}
-                custom={0.5}
+                custom={2.5}
             >
                 <p className={`${pacifico.className} text-left lg:text-[3rem] text-[2rem]`}>Hello,</p>
             </motion.div>
@@ -41,7 +41,7 @@ export default function Intro() {
                 initial="initial" 
                 whileInView="animate" 
                 viewport={{once: true}}
-                custom={1}
+                custom={3}
             >
                 <p className={`text-left`}>I’m a Developer with a passion for </p>
             </motion.div>
@@ -49,7 +49,7 @@ export default function Intro() {
                 initial="initial" 
                 whileInView="animate" 
                 viewport={{once: true}}
-                custom={1.5}
+                custom={3.5}
             >
                 <p className={`text-left`}>making things functional and beautiful.</p>
             </motion.div>
@@ -57,7 +57,9 @@ export default function Intro() {
         <motion.div className='flex absolute lg:top-[20rem] lg:left-[42%] md:top-[20rem] md:left-[35%] top-[23rem] left-[24%]'
             variants={imageAnimation}
             initial="initial"
-            animate="animate">
+            animate="animate"
+            custom={3}
+            >
             <ScrollParallax shouldPause>
                 <Image src={profile} alt="Manav Bafna"
                     className="w-[200px] rounded-xl grayscale hover:grayscale-0"

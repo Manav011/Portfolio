@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from '@/components/animations/animations';
 
-const words = ["नमस्ते","Bonjour" , "Hello" ,"Shalom" , "Yassas" ,"Asalaam alaikum" , "Olá" ,"Konnichiwa" , "Hola" , "Ciao"]
+const words = ["राधे-राधे", "नमस्ते",  "வணக்கம்!", "నమస్కారం", "নমস্কার", "Bonjour", "Hello", "Shalom", "Ciao", "Konnichiwa"]
 
 export default function Preloader() {
     const [index, setIndex] = useState(0);
@@ -36,7 +36,7 @@ export default function Preloader() {
     }
 
     return (
-        <motion.div variants={slideUp} initial="initial" exit="exit" className={`${styles.introduction}`}>
+        <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
                 <motion.p variants={opacity} initial="initial" animate="enter"><span></span>{words[index]}</motion.p>

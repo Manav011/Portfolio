@@ -10,7 +10,7 @@ import Preloader from "@/components/preloader/preloader";
 import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  // this is how to change the cursor 
+  
   const blobityInstance = useBlobity(initialBlobityOptions);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -27,18 +27,16 @@ export default function Home() {
       left: 0,
     });
   }, []);
-  // cursor changing part will end here
 
   useEffect( () => {(
     async () => {
-        // locomotive scroll to make scroll smooth and slow
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
+          
           setTimeout( () => {
             setIsLoading(false);
-            document.body.style.cursor = 'default'
             window.scrollTo(0,0);
-          }, 2000)
+          }, 2300)
       }
     )()
   }, [])

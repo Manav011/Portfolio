@@ -98,7 +98,7 @@ export const skillsData = [
     {
         name: "OCAJP SE8",
         svg: badge,
-        link: "https://drive.google.com/file/d/1GXbwaNH7nG-3AlMkLs1yTfhpTqyhctlC",
+        link: "https://education.oracle.com/product/trackp_333",
     },
     {
         name: "Angular",

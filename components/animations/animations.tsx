@@ -7,7 +7,8 @@ export const riseWithFade = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 1.5,
+      delay: 3,
       ease: [0.65, 0, 0.35, 1],
     },
   },
@@ -36,7 +37,7 @@ export const riseWithFade1 =  {
     y:'0em' , 
     opacity:1 , 
     transition:{
-      delay: 0.1, 
+      delay: 0.5, 
       duration: 1, 
       ease: [0.2, 0.65, 0.3, 0.9],
     },
@@ -52,6 +53,7 @@ export const scalingAnimation = {
     scale: 1,
     opacity: 1,
     transition: {
+      delay: 3,
       duration: 0.8,
       ease: [0.65, 0, 0.35, 1],
     },
@@ -63,15 +65,15 @@ export const imageAnimation = {
     opacity: 0,
     scale: 0.7,
   },
-  animate: {
+  animate: (delay1: number) => ({
     opacity: 1,
     scale: 1,
     transition: {
-      delay: 0.5,
+      delay: delay1,
       duration: 1,
       ease: [0.2, 0.65, 0.3, 0.9],
     },
-  },
+  }),
 };
 
 export const skillsAnimation = {
@@ -83,7 +85,7 @@ export const skillsAnimation = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.1 * index
+      delay: 0.08 * index
     }
   }),
 }
@@ -124,8 +126,8 @@ export const slideUp = {
   exit: {
       top: "-100vh",
       transition: {
-        duration: 0.8,
-        ease: [0.76, 0, 0.24, 1],
+        duration: 0.8, 
+        ease: [0.76, 0, 0.24, 1], 
         delay: 0.2
       }
   }

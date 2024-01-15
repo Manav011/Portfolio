@@ -8,8 +8,8 @@ export default function Logo() {
   return (
     <motion.div className={sty.header}
       variants={scalingAnimation}
-      initial={scalingAnimation.initial}
-      animate={scalingAnimation.animate}
+      initial="initial"
+      animate="animate"
     >
         <div data-blobity-tooltip="Looks cool right" className={sty.logo}>
               <p className={sty.copyright}>©</p>
