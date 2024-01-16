@@ -88,7 +88,7 @@ export const projectsData = [
         "A sleek web app powered by Angular, TypeScript, and Bootstrap. Breaking news from every corner of the globe, seamlessly delivered through the NewsAPI. Engage with a visually dynamic interface and enjoy a fluid news experience, enriched with captivating custom animation.",
     tags: ["Angular", "Bootstrap" , "TypeScript"],
     imageUrl: newsimg,
-    url: "",
+    url: "https://github.com/Manav011/NewsWebApp",
     githubUrl: "https://github.com/Manav011/NewsWebApp",
 },
 ] as const;
@@ -148,7 +148,7 @@ export const skillsData = [
     {
         name: "HTML",
         svg: htmlsvg,
-        link: "hhttps://developer.mozilla.org/en-US/docs/Web/HTML",
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
         name: "Java",
