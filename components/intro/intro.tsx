@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar/navbar";
 import Logo from "@/components/logo/logo";
 import Nameanimation from '../nameanimation/nameanimation';
 import { motion } from 'framer-motion';
-import profile from '@/public/images/manav.png';
+import profile from '@/public/images/manav.webp';
 import { scalingAnimation, imageAnimation, titleAnimation } from '../animations/animations';
 import { ScrollParallax } from 'react-just-parallax';
 import { Pacifico } from 'next/font/google';
